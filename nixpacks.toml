@@ -1,6 +1,9 @@
 [phases.setup]
 nixPkgs = ['docker']
 
+[phases.install]
+cmd = ''
+
 [phases.build]
 cmds = ['docker compose -f docker/docker-compose.dev.yaml build']
 
